@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">RaxelSDK_demo</string>
+
+    <!-- Origin type -->
+    <string name="not_driver"><u>I was a Passenger</u></string>
+    <string name="origin_driver"><u>I was a Driver</u></string>
+    <string name="origin_passenger">I was a Passenger</string>
+    <string name="origin_bus">I was on a bus</string>
+    <string name="origin_taxi">I was in a taxi</string>
+    <string name="origin_train">I was on a train</string>
+    <string name="origin_bicycle">I was on a bicycle</string>
+    <string name="origin_motocycle">I was on a motorcycle</string>
+    <string name="origin_walking">I was walking</string>
+    <string name="origin_run">I was running</string>
+    <string name="origin_other">Other kind of transport</string>
+
+    <string name="main_stat_km_label">km</string>
+    <string name="main_stat_min_label">min</string>
+    <string name="main_stat_h_label">hrs</string>
+    <string name="main_stat_km_per_h_label">km/h</string>
+    <string name="main_stat_times_label">times</string>
+    <string name="main_stat_date_label">date</string>
+    <string name="main_stat_unknown_label">unknown</string>
+
+    <string name="FORMAT_КМ">%d km</string>
+    <string name="FORMAT_MIN">%d min</string>
+    <string name="FORMAT_HRS">%d hrs</string>
+    <string name="FORMAT_KM_SPEED">%d km/h</string>
+
+    <string name="main_stat_rating_text">Rating</string>
+    <string name="main_stat_rating_for">points for</string>
+    <string name="main_stat_rating_subtitle_maneuver">Maneuvers</string>
+    <string name="main_stat_rating_subtitle_mileage">Mileage</string>
+    <string name="main_stat_rating_subtitle_speeding">Speeding</string>
+    <string name="main_stat_rating_subtitle_drivingtime">Driving Time</string>
+    <string name="main_stat_rating_subtitle_phone">Phone Usage</string>
+    <string name="main_stat_dashboard_points">Points\nout of 100</string>
+    <string name="main_stat_circlebar_general">OUT OF 100</string>
+    <string name="main_stat_circlebar_weekly">progress</string>
+    <string name="main_stat_dashboard_your_raiting">Your Rating</string>
+    <string name="main_stat_dashboard_your_raiting_weekly">Your score &amp;\nweekly progress</string>
+    <string name="main_stat_dashboard_advice">The better is your driving behaviour, \nthe higher the score is</string>
+    <string name="main_stat_maneuver_top_left_title">Frequency of harsh braking per 100km:</string>
+    <string name="main_stat_maneuver_top_right_title">Frequency of rapid accelerations per 100km:</string>
+    <string name="main_stat_maneuver_bottom_left_title">Harsh Braking during this period:</string>
+    <string name="main_stat_maneuver_bottom_right_title">Rapid Accelerations for period:</string>
+    <string name="main_stat_mileage_top_left_title">Avg Mileage:</string>
+    <string name="main_stat_mileage_top_right_title">Average monthly mileage:</string>
+    <string name="main_stat_mileage_bottom_left_title">Total Mileage:</string>
+    <string name="main_stat_mileage_bottom_right_title">Predicted annual mileage:</string>
+    <string name="main_stat_drivingtime_top_left_title">Night Hours:</string>
+    <string name="main_stat_drivingtime_top_right_title">Average Daily Driving:</string>
+    <string name="main_stat_drivingtime_bottom_left_title">Rush Hours:</string>
+    <string name="main_stat_drivingtime_bottom_right_title">Total Driving Time:</string>
+    <string name="main_stat_speeding_top_left_title">Above speed limit per 100 km:</string>
+    <string name="main_stat_speeding_top_right_title">Above speed limit more than 20km/h per 100 km:</string>
+    <string name="main_stat_speeding_bottom_left_title">Max Speed:</string>
+    <string name="main_stat_speeding_bottom_right_title">Avg Speed:</string>
+    <string name="main_stat_phone_top_left_title">Phone Usage while driving:</string>
+    <string name="main_stat_phone_top_right_title">Phone Usage with speeding over 20km/h:</string>
+    <string name="empty_string">""</string>
+</resources>

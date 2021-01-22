@@ -1,0 +1,3 @@
+include ':HERE-sdk'
+include ':app'
+rootProject.name = "SDK Demo"

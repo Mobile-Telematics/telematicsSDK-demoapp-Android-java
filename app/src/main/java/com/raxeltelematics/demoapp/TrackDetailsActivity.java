@@ -36,12 +36,15 @@ import java.util.List;
 
 import io.reactivex.Single;
 import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 
 public class TrackDetailsActivity extends AppCompatActivity {
 
     final static String EXTRA_TRACK_ID = "extra.track.id";
+
+    private CompositeDisposable disposables = new CompositeDisposable();
 
     List<String> arrayOriginTypesStr = List.of(
             "OriginalDriver",
@@ -116,6 +119,8 @@ public class TrackDetailsActivity extends AppCompatActivity {
                             }
                         }
                 );
+
+        disposables.add(d);
     }
 
     private void updateDetailsView(TrackDetails details) {
@@ -378,5 +383,11 @@ public class TrackDetailsActivity extends AppCompatActivity {
             }
             onAllPermissionsSuccess();
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        disposables.dispose();
+        super.onDestroy();
     }
 }

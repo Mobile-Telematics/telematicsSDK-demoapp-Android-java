@@ -57,7 +57,7 @@ public class TripsListActivity extends AppCompatActivity {
                             updateData(value);
                         }
                 );
-        //disposables.add(d);
+        disposables.add(d);
     }
 
 

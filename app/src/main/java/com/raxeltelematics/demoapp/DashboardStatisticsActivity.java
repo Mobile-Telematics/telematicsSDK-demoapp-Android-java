@@ -14,10 +14,13 @@ import com.raxeltelematics.v2.sdk.server.model.sdk.DashboardInfo;
 
 import io.reactivex.Single;
 import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 
 public class DashboardStatisticsActivity extends AppCompatActivity {
+
+    private CompositeDisposable disposables = new CompositeDisposable();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +75,8 @@ public class DashboardStatisticsActivity extends AppCompatActivity {
                 .subscribe(
                         value -> updateDashboard(value)
                 );
+
+        disposables.add(d);
     }
 
     private void updateDashboard(DashboardInfo result) {
@@ -82,5 +87,11 @@ public class DashboardStatisticsActivity extends AppCompatActivity {
             ((TextView) findViewById(R.id.mileageView)).setText(result.getMileageLevel() + " points out of 100");
             ((TextView) findViewById(R.id.phoneView)).setText(result.getPhoneLevel() + " points out of 100");
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        disposables.dispose();
+        super.onDestroy();
     }
 }

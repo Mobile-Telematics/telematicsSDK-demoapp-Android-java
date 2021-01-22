@@ -37,6 +37,7 @@ import java.util.Locale;
 
 import io.reactivex.Single;
 import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 
@@ -48,6 +49,8 @@ public class StatisticActivity extends AppCompatActivity {
     static final String STATISTIC_TYPE_SPEEDING = "statistic.type.speeding";
     static final String STATISTIC_TYPE_MILEAGE = "statistic.type.mileage";
     static final String STATISTIC_TYPE_PHONE_USAGE = "statistic.type.phone.usage";
+
+    private CompositeDisposable disposables = new CompositeDisposable();
 
     StatisticInfoTextFormatterImpl formatter;
     Integer typeInt;
@@ -139,6 +142,9 @@ public class StatisticActivity extends AppCompatActivity {
                             initGraph(model);
                         }
                 );
+
+
+        disposables.add(d);
     }
 
     private void initChart() {
@@ -357,5 +363,11 @@ public class StatisticActivity extends AppCompatActivity {
                 labelAx.setText(R.string.main_stat_unknown_label);
             }
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        disposables.dispose();
+        super.onDestroy();
     }
 }

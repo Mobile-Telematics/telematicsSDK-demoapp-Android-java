@@ -1,4 +1,4 @@
-package com.raxeltelematics.demoapp;
+package com.telematics.demoapp;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,12 +18,9 @@ import com.raxeltelematics.v2.sdk.utils.permissions.PermissionsWizardActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String YOUR_TOKEN = "313af61d-0ec5-471a-81c2-772c45337bdb";
-    private TrackingApi trackingApi;
+    private static final String YOUR_TOKEN = "";
+    private final TrackingApi trackingApi = TrackingApi.getInstance();
 
-    public MainActivity() {
-        this.trackingApi = TrackingApi.Companion.getInstance();
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

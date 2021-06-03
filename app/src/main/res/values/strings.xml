@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RaxelSDK_demo</string>
+    <string name="app_name">Demo app</string>
 
     <!-- Origin type -->
     <string name="not_driver"><u>I was a Passenger</u></string>

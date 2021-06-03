@@ -1,4 +1,4 @@
-package com.raxeltelematics.demoapp;
+package com.telematics.demoapp;
 
 public class TripPointModel {
     double latitude;

@@ -1,9 +1,8 @@
-package com.raxeltelematics.demoapp;
+package com.telematics.demoapp;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 

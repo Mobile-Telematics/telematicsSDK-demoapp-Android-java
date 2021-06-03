@@ -1,4 +1,4 @@
-package com.raxeltelematics;
+package com.telematics;
 
 import android.app.Application;
 import android.util.Log;

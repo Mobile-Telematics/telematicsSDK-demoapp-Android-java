@@ -1,4 +1,4 @@
-package com.raxeltelematics.demoapp;
+package com.telematics.demoapp;
 
 import android.content.Context;
 import android.graphics.Color;

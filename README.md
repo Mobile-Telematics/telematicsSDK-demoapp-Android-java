@@ -1,7 +1,6 @@
 # Mobile Telematics demo app JAVA
 
-This is an app that demostrate using of the [Telematics SDK](https://www.telematicssdk.com/telematics-sdk/) and walk you throught the integration. The SDK tracks user location and driving behavior such as speeding, cornering, braking, distracted driving and other parameters.
-
+This is an app that demonstrates using of the [Telematics SDK](https://www.telematicssdk.com/telematics-sdk/) and walks you through the integration. The SDK tracks user location and driving behavior such as speeding, cornering, braking, distracted driving, and other parameters.
 ## Installation
 * Create a company account in [Datahub](https://userdatahub.com/)
 * Obtain [credentials](https://docs.telematicssdk.com/docs/datahub#user-service-credentials)
@@ -21,6 +20,11 @@ This is an app that demostrate using of the [Telematics SDK](https://www.telemat
 * Make a trip
 * Check your trip in the [Datahub](https://userdatahub.com/)
 
+## Telematics SDK
+* [Telematics SDK for iOS apps](https://docs.telematicssdk.com/docs/-download-the-sdk-and-install-it-in-your-environment)
+* [Telemmatics SDK for Android apps](https://docs.telematicssdk.com/docs/add-the-sdk-to-your-app-android)
+* [Telematics SDK for Flutter apps](https://docs.telematicssdk.com/docs/sdk-for-flutter-app)
+* [Telematics SDK for ReactNative](https://docs.telematicssdk.com/docs/react-native)
 
 ## More details on Mobile telematics
 * [Telematics product page](https://telematicssdk.com)
